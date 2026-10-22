@@ -1,106 +1,104 @@
-import './Perfil.css';
+import "./Perfil.css";
+
 const Perfil = () => {
-return (
-<section id="sobre-mi" className="sobre-mi-section">
-<div className="sobre-mi-container">
-<h2 className="section-title">Sobre mí</h2>
-<div className="sobre-mi-grid">
-{/* =====================================
-TARJETA 1: PERFIL PROFESIONAL
-====================================== */}
-<div className="card">
-<div className="card-header">
-{/* Ícono de Usuario (SVG) */}
-<div className="icon-box">
-<svg xmlns="http://www.w3.org/2000/svg" width="24"
-height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4
+  // Texto de la tarjeta "Perfil profesional" (un párrafo por elemento)
+  const parrafos = [
+    "Estudiante de Ingeniería de Software con Inteligencia Artificial en SENATI. Llevo tres años de formación y me falta un ciclo para egresar.",
+    "He desarrollado aplicaciones web con React, Bootstrap y Git/GitHub, y una aplicación móvil Android en equipo como parte del seminario de Diseño y Desarrollo de Aplicaciones Móviles.",
+    "Me gusta trabajar en equipo, aprender tecnologías nuevas y convertir ideas en productos que funcionan.",
+  ];
 
-4v2"></path>
+  // Línea de tiempo de formación (agrega más objetos cuando tengas certificados)
+  const educacionData = [
+    {
+      id: 1,
+      titulo: "Ingeniería de Software con Inteligencia Artificial",
+      etiqueta: "En curso",
+      detalle: "SENATI · A un ciclo de egresar",
+    },
+    // {
+    //   id: 2,
+    //   titulo: "Nombre del certificado o curso",
+    //   etiqueta: "Certificación",
+    //   detalle: "Institución · Año"
+    // }
+  ];
 
-<circle cx="12" cy="7" r="4"></circle>
-</svg>
-</div>
-<h3>Perfil profesional</h3>
-</div>
-<p className="card-text">
-Ingeniero de Sistemas Comptacionales, con experiencia en la
-docencia de más de 15 años, dictando clases de forma presencial y virtual
-en diferentes instituciones educativas de prestigio y con experiencia
-profesional de más de 11 años.
-<br /><br />
-Cuento la Certificación Internacional en Microsoft Office
-Specialist (MOS) Excel Expert y PL - 300 Data Analyst Associate.
-Instructor CISCO y ORACLE.
-<br /><br />
-Consultoría y experiencia en desarrollo de software,
-utilizando tecnologías como React, Laravel, NodeJS, ExpressJS, MySQL,
-PostGreSQL, etc. y en desarrollo de dashboards interactivos mediante
-Power BI, DAX, Power Query, modelado de datos en SQL y automatizaciones
-con Python.
-</p>
-</div>
-{/* =====================================
-TARJETA 2: EDUCACIÓN
-====================================== */}
-<div className="card">
-<div className="card-header">
-{/* Ícono de Educación / Sombrero (SVG) */}
-<div className="icon-box">
-<svg xmlns="http://www.w3.org/2000/svg" width="24"
-height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-</svg>
-</div>
-<h3>Educación</h3>
-</div>
-<div className="timeline">
-{/* Ítem de Educación 1 */}
-<div className="timeline-item">
-<div className="timeline-header">
-<h4>Ingeniería de Sistemas Computacionales</h4>
-<span className="badge badge-outline">Titulado</span>
-</div>
-<span className="timeline-date">UNIVERSIDAD TECNOLÓGICA
+  return (
+    <section id="sobre-mi" className="sobre-mi-section">
+      <div className="sobre-mi-container">
+        <h2 className="section-title">Sobre mí</h2>
 
-DEL PERÚ</span>
-</div>
-{/* Ítem de Educación 2 */}
-<div className="timeline-item">
-<div className="timeline-header">
-<h4>Computación e Informática</h4>
-<span className="badge badge-outline">Titulado</span>
-</div>
-<span className="timeline-date">I.S.T CESCA</span>
-</div>
-{/* Ítem de Educación 3 */}
-<div className="timeline-item">
-<div className="timeline-header">
-<h4>MOS Excel Expert</h4>
-<span className="badge badge-outline">Certificación
+        <div className="sobre-mi-grid">
+          {/* TARJETA 1: PERFIL PROFESIONAL */}
+          <div className="card">
+            <div className="card-header">
+              <div className="icon-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3>Perfil profesional</h3>
+            </div>
 
-Internacional</span>
-</div>
-<span className="timeline-date">MICROSOFT</span>
-</div>
-{/* Ítem de Educación 4 */}
-<div className="timeline-item">
-<div className="timeline-header">
-<h4>Power BI Data Analyst Associate - PL - 300</h4>
-<span className="badge badge-outline">Certificación
+            <div className="card-text">
+              {parrafos.map((texto, index) => (
+                <p key={index} className="card-parrafo">
+                  {texto}
+                </p>
+              ))}
+            </div>
+          </div>
 
-Internacional</span>
-</div>
-<span className="timeline-date">MICROSOFT</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-);
+          {/* TARJETA 2: EDUCACIÓN */}
+          <div className="card">
+            <div className="card-header">
+              <div className="icon-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3>Educación</h3>
+            </div>
+
+            <div className="timeline">
+              {educacionData.map((item) => (
+                <div key={item.id} className="timeline-item">
+                  <div className="timeline-header">
+                    <h4>{item.titulo}</h4>
+                    <span className="badge badge-outline">{item.etiqueta}</span>
+                  </div>
+                  <span className="timeline-date">{item.detalle}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Perfil;

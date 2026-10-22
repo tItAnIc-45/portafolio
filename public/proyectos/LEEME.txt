@@ -1,0 +1,9 @@
+Coloca aquí las imágenes de los proyectos con estos nombres exactos:
+
+  appescuela.png   (captura de appEscuela)
+  portafolio.png   (captura del portafolio)
+  apptarea.png     (captura de appTarea)
+  cajafuerte.png   (foto o captura de la Caja Fuerte)
+
+Medidas recomendadas: ~1200x675 px, horizontales, menos de 300 KB.
+Mientras una imagen no exista, la tarjeta muestra un recuadro </> automáticamente.

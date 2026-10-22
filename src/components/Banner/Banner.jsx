@@ -1,64 +1,48 @@
-import './Banner.css';
-import miFoto from '../../assets/miFoto.png';
+import "./Banner.css";
+import miFoto from "../../assets/miFoto.png";
+
 const Banner = () => {
-return (
-<section className="hero-section">
-<div className="hero-content">
-{/* 1. Etiqueta de Estado (Badge) */}
-<div className="status-badge">
-<span className="status-dot"></span>
-Disponible para nuevos proyectos
-</div>
-{/* 2. Foto de Perfil Circular */}
-<div className="profile-photo-container">
-{/* Reemplazar src con {miFoto} cuando importen su imagen local
+  return (
+    <section className="hero-section">
+      <div className="hero-content">
+        <div className="status-badge">
+          <span className="status-dot"></span>
+          Disponible para prácticas y proyectos
+        </div>
 
-*/}
+        <div className="profile-photo-container">
+          <img src={miFoto} alt="Foto de perfil" className="profile-photo" />
+        </div>
 
-<img
-src={miFoto}
-alt="Foto de Perfil"
-className="profile-photo"
-/>
-</div>
-{/* 3. Título Principal */}
-<h1 className="hero-title">
-Lia <br />
-<span className="text-cyan">Malpartida</span>
-</h1>
-{/* 4. Subtítulo (Rol) */}
-<h2 className="hero-subtitle">
-Consultor e Instructor BI - Software | MOS Excel Expert | Power
+        <h1 className="hero-title">
+          Lia <br />
+          <span className="text-cyan">Malpartida</span>
+        </h1>
 
-BI Data Analyst | Ingeniero de Sistemas
-</h2>
-{/* 5. Descripción */}
-<p className="hero-description">
-Construyo sistemas inteligentes que automatizan procesos,
+        <h2 className="hero-subtitle">
+          Estudiante de Ingeniería de Software con IA | SENATI
+        </h2>
 
-analizan
+        <p className="hero-description">
+          Estudiante a un ciclo de egresar, con tres años de formación en
+          desarrollo de software. Construyo aplicaciones web y móviles y me
+          interesa aplicar la inteligencia artificial para resolver problemas
+          reales.
+        </p>
 
-datos y transforman la información. También desarrollo
-aplicaciones web funcionales para resolver necesidades reales.
+        <div className="hero-buttons">
+          <a href="#proyectos" className="btn btn-primary">
+            Ver Proyectos
+          </a>
+          <a href="#contacto" className="btn btn-secondary">
+            Contáctame
+          </a>
+        </div>
+      </div>
 
-Consultoría de Software y BI para empresas.
-</p>
-{/* 6. Botones de Acción */}
-<div className="hero-buttons">
-<a href="#proyectos" className="btn btn-primary">Ver
-
-Proyectos</a>
-
-<a href="#contacto" className="btn btn-
-secondary">Contáctame</a>
-
-</div>
-</div>
-{/* 7. Indicador de Scroll (Flecha animada hacia abajo) */}
-<div className="scroll-indicator">
-↓
-</div>
-</section>
-);
+      <div className="scroll-indicator">↓</div>
+    </section>
+  );
 };
+
 export default Banner;
