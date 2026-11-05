@@ -19,25 +19,36 @@ const Proyectos = () => {
   // linkDemo / linkCodigo: "" -> el botón correspondiente no aparece
   const proyectosData = [
     {
+      id: 11,
+      publicar: true,
+      imagen: "/proyectos/Plantillas.jpg",
+      titulo: "Catálogo de plantillas web — TuPlus",
+      descripcion:
+        "Catálogo de plantillas web para distintos sectores profesionales, desarrollado en equipo. Participé en la investigación de referencias, el desarrollo frontend y la coordinación de tareas para organizar y presentar las propuestas",
+      tecnologias: ["Frontend", "Trabajo en equipo", "Coordinación de tareas"],
+      linkDemo: "https://titanic-45.github.io/PLANTILLAS/",
+      linkCodigo: "https://github.com/tItAnIc-45/PLANTILLAS",
+    },
+    {
       id: 7,
       publicar: true,
-      imagen: "",
+      imagen: "/proyectos/huellitasvet.jpg",
       titulo: "Huellitas Vet",
       descripcion:
         "Proyecto frontend para una veterinaria, con diseño responsivo, componentes reutilizables e interfaz de usuario.",
       tecnologias: ["Frontend", "Diseño responsivo", "Componentes reutilizables"],
-      linkDemo: "",
+      linkDemo: "https://huellitavet.vercel.app",
       linkCodigo: "",
     },
     {
       id: 8,
       publicar: true,
-      imagen: "",
+      imagen: "/proyectos/NovaSaludTienda.jpg",
       titulo: "Nova Salud Tienda",
       descripcion:
         "Tienda de farmacia desarrollada en equipo. Participé en el frontend y en la implementación de comprobantes PDF.",
       tecnologias: ["Frontend", "Comprobantes PDF", "Trabajo en equipo"],
-      linkDemo: "",
+      linkDemo: "https://nova-salud-tienda.vercel.app/",
       linkCodigo: "https://github.com/nova-salud-equipo/nova-salud-tienda/tree/develop",
     },
     {
@@ -53,39 +64,40 @@ const Proyectos = () => {
     {
       id: 10,
       publicar: true,
-      imagen: "",
-      titulo: "Aplicación de inventario",
-      descripcion: "Aplicación de inventario.",
-      tecnologias: [],
+      imagen: "/proyectos/appInventario.jpg",
+      titulo: "Gestión de Productos — CRUD React",
+      descripcion:
+        "Proyecto académico desarrollado para practicar operaciones CRUD con React y una API REST. Incluye formularios para registrar, editar y eliminar productos, además de gestionar precios y stock.",
+      tecnologias: ["React", "JavaScript", "Bootstrap", "API REST"],
       linkDemo: "",
       linkCodigo: "https://github.com/tItAnIc-45/appInventario",
     },
     {
       id: 1,
       publicar: true,
-      imagen: "/proyectos/appescuela.png",
-      titulo: "Directorio de Alumnos - appEscuela",
+      imagen: "/proyectos/appEscuela.jpg",
+      titulo: "Directorio de Alumnos — React",
       descripcion:
-        "Aplicación en React con tarjetas de alumnos reutilizables (props), cambio de estado con useState y contador interactivo.",
-      tecnologias: ["React", "Vite", "Bootstrap", "useState", "Props"],
+        "Proyecto académico desarrollado para practicar React, componentes reutilizables, props y manejo de estados. Muestra tarjetas de alumnos, permite cambiar su estado de matrícula e incluye un contador interactivo.",
+      tecnologias: ["React", "JavaScript", "Bootstrap", "useState", "Props"],
       linkDemo: "",
       linkCodigo: "https://github.com/tItAnIc-45/appEscuela",
     },
     {
       id: 2,
       publicar: true,
-      imagen: "/proyectos/portafolio.png",
+      imagen: "/proyectos/Portafolio.jpg",
       titulo: "Portafolio Personal en React",
       descripcion:
         "Portafolio web responsivo hecho con componentes: Navbar, Banner, Perfil, Habilidades, Proyectos y Contacto.",
       tecnologias: ["React", "Vite", "CSS Grid", "Flexbox", "useState"],
-      linkDemo: "",
+      linkDemo: "https://portafolio-49et.vercel.app/",
       linkCodigo: "https://github.com/tItAnIc-45/portafolio",
     },
     {
       id: 3,
       publicar: true,
-      imagen: "/proyectos/apptarea.png",
+      imagen: "/proyectos/AppTareas.jpg",
       titulo: "appTarea - Aplicación móvil (trabajo grupal)",
       descripcion:
         "Aplicación móvil Android desarrollada en equipo como trabajo final del seminario de Diseño y Desarrollo de Aplicaciones Móviles.",
@@ -97,7 +109,7 @@ const Proyectos = () => {
     {
       id: 4,
       publicar: true,
-      imagen: "/proyectos/cajafuerte.png",
+      imagen: "/proyectos/Caja_Fuerte.jpg",
       titulo: "Caja Fuerte con Alarma - Banco SENATI",
       descripcion:
         "Proyecto final de ciclo: caja fuerte con sistema de alarma desarrollada como caso del Banco SENATI. Incluye informe, presentación y video de demostración.",
