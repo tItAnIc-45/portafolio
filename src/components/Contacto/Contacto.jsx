@@ -85,6 +85,22 @@ const Contacto = () => {
             </p>
 
             <div className="info-items">
+              <a
+                href="https://www.linkedin.com/in/lia-malpartida-ulloa-a233413b6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="info-item contacto-linkedin"
+              >
+                <span className="info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM21 13.5c0-3.2-1.7-5.2-4.5-5.2-1.5 0-2.6.7-3.2 1.5V8.5H10V21h3.5v-7c0-1.8.9-2.7 2.2-2.7s1.8 1 1.8 2.7v7H21v-7.5Z" />
+                  </svg>
+                </span>
+                <span>
+                  <span className="item-label">LinkedIn</span>
+                  <span className="item-text">Conecta conmigo ↗</span>
+                </span>
+              </a>
               <div className="info-item">
                 <div className="info-icon">
                   <svg

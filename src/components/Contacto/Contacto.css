@@ -54,6 +54,7 @@ COLUMNA IZQUIERDA (Info)
   gap: 1rem;
 }
 .info-icon {
+  flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #00d8ff;
@@ -71,9 +72,27 @@ COLUMNA IZQUIERDA (Info)
   margin-bottom: 0.2rem;
 }
 .item-text {
+  overflow-wrap: anywhere;
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
+}
+.contacto-linkedin {
+  width: fit-content;
+  max-width: 100%;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.contacto-linkedin .item-text {
+  color: #00d8ff;
+  transition: color 0.3s ease;
+}
+.contacto-linkedin:hover .item-text {
+  color: #ffffff;
+}
+.contacto-linkedin:focus-visible {
+  outline: 2px solid #00d8ff;
+  outline-offset: 6px;
 }
 /* =========================================
 COLUMNA DERECHA (Formulario)

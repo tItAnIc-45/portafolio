@@ -19,13 +19,14 @@ GRID (2 Columnas en PC)
 ========================================= */
 .proyectos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
   gap: 2.5rem;
 }
 /* =========================================
 TARJETA DEL PROYECTO
 ========================================= */
 .proyecto-card {
+  min-width: 0;
   background-color: #111a2e;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -52,6 +53,7 @@ IMAGEN DEL PROYECTO
 CONTENIDO Y TEXTOS
 ========================================= */
 .proyecto-contenido {
+  overflow-wrap: anywhere;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -127,6 +129,9 @@ BOTONES DE ACCIÓN
 RESPONSIVIDAD (Móviles)
 ========================================= */
 @media (max-width: 600px) {
+  .proyecto-contenido {
+    padding: 1.5rem;
+  }
   .proyectos-grid {
     grid-template-columns: 1fr; /* 1 sola columna forzada */
   }

@@ -19,6 +19,48 @@ const Proyectos = () => {
   // linkDemo / linkCodigo: "" -> el botón correspondiente no aparece
   const proyectosData = [
     {
+      id: 7,
+      publicar: true,
+      imagen: "",
+      titulo: "Huellitas Vet",
+      descripcion:
+        "Proyecto frontend para una veterinaria, con diseño responsivo, componentes reutilizables e interfaz de usuario.",
+      tecnologias: ["Frontend", "Diseño responsivo", "Componentes reutilizables"],
+      linkDemo: "",
+      linkCodigo: "",
+    },
+    {
+      id: 8,
+      publicar: true,
+      imagen: "",
+      titulo: "Nova Salud Tienda",
+      descripcion:
+        "Tienda de farmacia desarrollada en equipo. Participé en el frontend y en la implementación de comprobantes PDF.",
+      tecnologias: ["Frontend", "Comprobantes PDF", "Trabajo en equipo"],
+      linkDemo: "",
+      linkCodigo: "https://github.com/nova-salud-equipo/nova-salud-tienda/tree/develop",
+    },
+    {
+      id: 9,
+      publicar: true,
+      imagen: "",
+      titulo: "Plantilla web para abogados",
+      descripcion: "Plantilla web para abogados.",
+      tecnologias: [],
+      linkDemo: "",
+      linkCodigo: "https://github.com/tItAnIc-45/Profesionales-Abogados",
+    },
+    {
+      id: 10,
+      publicar: true,
+      imagen: "",
+      titulo: "Aplicación de inventario",
+      descripcion: "Aplicación de inventario.",
+      tecnologias: [],
+      linkDemo: "",
+      linkCodigo: "https://github.com/tItAnIc-45/appInventario",
+    },
+    {
       id: 1,
       publicar: true,
       imagen: "/proyectos/appescuela.png",
@@ -110,13 +152,15 @@ const Proyectos = () => {
                 <h3 className="proyecto-titulo">{proyecto.titulo}</h3>
                 <p className="proyecto-desc">{proyecto.descripcion}</p>
 
-                <div className="proyecto-tags">
-                  {proyecto.tecnologias.map((tech, index) => (
-                    <span key={index} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                {proyecto.tecnologias.length > 0 && (
+                  <div className="proyecto-tags">
+                    {proyecto.tecnologias.map((tech, index) => (
+                      <span key={index} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 {(proyecto.linkDemo || proyecto.linkCodigo) && (
                   <div className="proyecto-links">
