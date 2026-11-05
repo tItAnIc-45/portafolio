@@ -52,16 +52,6 @@ const Proyectos = () => {
       linkCodigo: "https://github.com/nova-salud-equipo/nova-salud-tienda/tree/develop",
     },
     {
-      id: 9,
-      publicar: true,
-      imagen: "",
-      titulo: "Plantilla web para abogados",
-      descripcion: "Plantilla web para abogados.",
-      tecnologias: [],
-      linkDemo: "",
-      linkCodigo: "https://github.com/tItAnIc-45/Profesionales-Abogados",
-    },
-    {
       id: 10,
       publicar: true,
       imagen: "/proyectos/appInventario.jpg",
